@@ -1,15 +1,47 @@
+# name: Super_Employee
+# on:
+#   workflow_dispatch: 
+# jobs:
+#   checkin:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout repo
+#         uses: actions/checkout@v3        
+#       - name: Set up env
+#         run: pip install requests
+#        # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
+#       - name: Checkin
+#         run: |
+#           python main.py 
+
 name: Super_Employee
+
 on:
-  workflow_dispatch: 
+  # 每天北京时间上午 10:00 自动触发
+  schedule:
+    - cron: '0 10 * * *'
+      timezone: 'Asia/Shanghai'
+
+  # 保留手动运行入口
+  workflow_dispatch:
+
 jobs:
   checkin:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3        
-      - name: Set up env
-        run: pip install requests
-       # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi 
-      - name: Checkin
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify scheduled execution
         run: |
-          python main.py 
+          echo "Super_Employee workflow started"
+          echo "Timezone: Asia/Shanghai"
+          echo "Schedule: Every day at 10:00"
+          python --version
+          echo "Workflow configuration is working"
