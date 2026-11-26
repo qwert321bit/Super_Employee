@@ -14,12 +14,12 @@ deviceName='HUAWEI'
 # --------------平台选择--------------------
 # 开启的平台请务必下滑找到该平台的配置项并填入对应配置
 # 是否启用实习僧
-shixiseng_state = 0
+shixiseng_state = 1
 yizhanchi_state = 0
-bosszhipin_state = 0
-zhilianzhaopin_state = 0
-maimai_state = 0
-wubatongcheng_state = 0
+bosszhipin_state = 1
+zhilianzhaopin_state = 1
+maimai_state = 1
+wubatongcheng_state = 1
 # --------------实习僧配置项--------------------
 # 是否投递(不投递:0,投递优先在线简历:1,投递优先离线简历:2)
 shixiseng_postnumber=0#想要推送的数量
