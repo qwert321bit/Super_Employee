@@ -1,0 +1,28 @@
+
+{
+  "keywords": [
+    "Python开发",
+    "AI应用开发",
+    "大模型应用开发"
+  ],
+  "locations": [
+    "北京",
+    "上海",
+    "广州",
+    "深圳",
+    "杭州"
+  ],
+  "education": [
+    "本科",
+    "本科及以上"
+  ],
+  "job_type": [
+    "实习"
+  ],
+  "salary": {
+    "unlimited": true,
+    "accept_negotiable": true
+  },
+  "auto_apply": false,
+  "deduplicate": true
+}
