@@ -8,7 +8,7 @@ poststate = 1  # 不投递0;投递1;
 UseResultPush = 0  # 是否启用推送
 PushToken = ''  # 在pushpush网站中可以找到
 # 自定义请求的设备名称
-deviceName='HUAWEI'
+deviceName='Lin'
 
 
 # --------------平台选择--------------------
@@ -16,28 +16,28 @@ deviceName='HUAWEI'
 # 是否启用实习僧
 shixiseng_state = 1
 yizhanchi_state = 0
-bosszhipin_state = 1
-zhilianzhaopin_state = 1
-maimai_state = 1
-wubatongcheng_state = 1
+bosszhipin_state = 0
+zhilianzhaopin_state = 0
+maimai_state = 0
+wubatongcheng_state = 0
 # --------------实习僧配置项--------------------
 # 是否投递(不投递:0,投递优先在线简历:1,投递优先离线简历:2)
-shixiseng_postnumber=0#想要推送的数量
-shixiseng_poststate = 0#是否开启推送。0:否，1:是
+shixiseng_postnumber=100#想要推送的数量
+shixiseng_poststate = 1#是否开启推送。0:否，1:是
 # Cookie(参考wiki说明获取)
-shixiseng_Cookie = ''
+shixiseng_Cookie = 'utm_source_first=PC; position=pc_default; utm_source=PC; utm_campaign=PC; SXS_XSESSION_ID=2|1:0|10:1795694221|15:SXS_XSESSION_ID|88:ZWQ3Y2E2M2E2NzNjYjIzNmMyNGJkMjI3NWIyNmRjZjQwMDBjYTc3Mzc2MjM3YzM2MWFiN2E4YWVlYjc2MjI3Zg==|a5884624e323371eb4e445d343e2fbf8f338809cc1eb29117d82daac6ef45854; SXS_XSESSION_ID_EXP=2|1:0|10:1795694221|19:SXS_XSESSION_ID_EXP|16:MTc5ODI4NjIyMQ==|6e0f644ea6c13882ea90f90637d201ba5a8f44dd747241546aa80f364db909da; affefdgx=usr_siwjj62k2wsq; sxs_usr=2|1:0|10:1795694221|7:sxs_usr|24:dXNyX3Npd2pqNjJrMndzcQ==|d28b9f4912fcb51d6e5543d4a84ace87b8a6f12e579de2779c2f8aa9093c2d51; xyz_usr=2|1:0|10:1795694221|7:xyz_usr|24:dXNyX3Npd2pqNjJrMndzcQ==|e577bbdd877c6ec26dc4e9cb8c5c2556e4e81ada8cb21cc24667f4038ce59afd; userflag=user'
 # 筛选条件(带‘*’号的为必填项)
 shixiseng_Search = {
     'p': "1",
     't': "0",  # 智能排序:0，最近发布优先:1      *
-    'city': "北京",  # 地区(全国或其他省市)      *
+    'city': "北京|上海|广州|深圳|杭州",  # 地区(全国或其他省市)      *
     'nature': "",  # 类型：股份制企业|合伙企业
     'scale': "",  # 规模：50-150人|500-2000人
     'ipo': "",  # 融资：B轮|A轮
-    'k': "",  # 岗位                     *
+    'k': "AI应用开发",  # 岗位                     *
     'degree': "大专|本科",  # 学历：大专|本科
     'emp_chance': "",  # 空间：提供转正|面议
-    'intention': "",  # 需求：校招|实习
+    'intention': "实习",  # 需求：校招|实习
     'internship_duration': "",  # 在岗时间：1个月|3个月以上
     'days_per_week': "",  # 工作时间：4天|1天
     'payment_per_day': ""  # 日薪：200-300|100以下
@@ -45,7 +45,7 @@ shixiseng_Search = {
 # --------------易展翅配置项--------------------
 yizhanchi_postnumber=0#想要推送的数量
 yizhanchi_poststate = 0#是否开启推送。0:否，1:是
-yizhanchi_city=""#城市
+yizhanchi_city="北京|上海|广州|深圳|杭州"#城市
 yizhanchi_Cookie =""
 yizhanchi_Search = {
     'page_size': "1000",#查询范围  *
@@ -72,8 +72,8 @@ yizhanchi_Search = {
     'sort': ""
 }
 # --------------Boss直聘配置项--------------------
-bosszhipin_poststate = 0#是否开启推送。0:否，1:是
-bosszhipin_postnumber=0#想要推送的数量
+bosszhipin_poststate = 1#是否开启推送。0:否，1:是
+bosszhipin_postnumber=100#想要推送的数量
 bosszhipin_city=""#城市
 bosszhipin_Cookie =""
 bosszhipin_Search = {
